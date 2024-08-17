@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loading-page
+{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 10000;
+    background: black;
+    border: 2px solid red;
+    top: 0;
+}
+
+/*********** starting loading screen styling    [start]   **********/
+.starting-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10vh;
+    width: 5vw;
+    z-index: 1;
+    border: 2px solid red;
+    animation: rotateLoader .5s linear infinite alternate-reverse;
+    -webkit-animation: rotateLoader .5s linear infinite alternate-reverse;
+}
+
+@keyframes rotateLoader
+{
+    0%,100%{
+        transform: translate(-50%, -50%) rotate(0eg);
+        transform-origin: center center;
+        -webkit-transform: translate(-50%, -50%) rotate(0eg);
+        -moz-transform: translate(-50%, -50%) rotate(0eg);
+        -ms-transform: translate(-50%, -50%) rotate(0eg);
+        -o-transform: translate(-50%, -50%) rotate(0eg);
+    }    
+    50%
+    {
+        position: relative;
+        transform-origin: center center;
+        transform: translate(-50%, -50%) rotate(360deg);
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        -moz-transform: translate(-50%, -50%) rotate(360deg);
+        -ms-transform: translate(-50%, -50%) rotate(360deg);
+        -o-transform: translate(-50%, -50%) rotate(360deg);
+}
+}
+
+.starting-loading .leftTop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
+    padding: 10px;
+    border-image-slice: 1;
+    z-index: 1;
+    transition: 0.5s;
+    filter: drop-shadow(10px 10px 10px aqua);
+    animation: rotatefirst 1.5s alternate-reverse infinite;
+    border-image-source: radial-gradient(circle at top left, aqua,            transparent 25%);
+    -webkit-filter: drop-shadow(10px 10px 10px aqua);
+    -webkit-animation: rotatefirst 1.5s alternate-reverse infinite;
+}
+
+@keyframes rotatefirst {
+    0% {
+        top: 40%;
+        left: 40%;
+    }
+
+    50% {
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        /* rotate: 360deg; */
+    }
+}
+
+/* .starting-loading .rightTop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
+    padding: 10px;
+    border-image-slice: 1;
+    z-index: 1;
+    transition: 0.5s;
+    filter: drop-shadow(10px 10px 10px aqua);
+    /* animation: rotatesecond 1.5s alternate-reverse infinite; 
+    border-image-source: radial-gradient(circle at top right,
+            aqua,
+            /* rgb(89, 255, 0), 
+            transparent 25%);
+}
+
+@keyframes rotatesecond {
+    0% {
+        top: 50%;
+        right: 50%;
+    }
+
+    50% {
+        top: 0;
+        right: 0;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+} */
+
+.starting-loading .rightBottom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
+    padding: 10px;
+    border-image-slice: 1;
+    z-index: 1;
+    transition: 0.5s;
+    filter: drop-shadow(10px 10px 10px aqua);
+    animation: rotatethird 1.5s alternate-reverse infinite;
+    border-image-source: radial-gradient(circle at bottom right,            aqua,            transparent 25%);
+    -webkit-animation: rotatethird 1.5s alternate-reverse infinite;
+}
+
+@keyframes rotatethird {
+    0% {
+        bottom: 40%;
+        right: 40%;
+    }
+
+    50% {
+        bottom: 0;
+        right: 0;
+    }
+
+    100% {
+        /* rotate: 360deg; */
+    }
+}
+/* 
+.starting-loading .leftBottom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
+    padding: 10px;
+    border-image-slice: 1;
+    z-index: 1;
+    transition: 0.5s;
+    filter: drop-shadow(10px 10px 10px aqua);
+    /* animation: rotatefour 1.5s alternate-reverse infinite; 
+    border-image-source: radial-gradient(circle at bottom left,
+            aqua,
+            transparent 25%);
+}
+
+@keyframes rotatefour {
+    0% {
+        bottom: 50%;
+        left: 50%;
+    }
+
+    50% {
+        bottom: 0;
+        left: 0;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+} */
+
+/*********** starting loading screen styling    [ end ]   **********/
+/************   loader section  [[[[[[    End    ]]]]]]  ************/
+
+
